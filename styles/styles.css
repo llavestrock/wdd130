@@ -2,19 +2,25 @@
     --width: 150px;
     --color: black;
     --padding: 10px;
+    --background-color: beige;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav{
-    background-color: darkblue;
+    background-color: rgb(149, 197, 245);
     padding: var(--padding);
 }
 nav a {
     color: white;
-    display: block;
+    display: inline;
     padding: 20px;
 }
 h1 {
-    color: darkblue;
+    color: black;
 }
 main img{
     width: var(--width);
@@ -22,25 +28,41 @@ main img{
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 p {
-    padding: 0;
+    padding: 5px;
     color: var(--color);
 }
 main{
     max-width: 840px; 
 }
+main h1{
+    text-align: center;
+}
+main ul{
+    display: inline-block;
+}
+main ul li{
+    margin-left: 20px;
+}
+
 aside{
     max-width: 840px;
     margin: 10px;
     border: 1px solid black;
     padding: var(--padding);
-    background-color: beige;
+    background-color: var(--background-color);
     color: var(--color);
 }
 aside img{
     width: var(--width);
     height: auto;
+}
+aside h2{
+    position: absolute;
+    top: 400px;
+    left: 300px;
 }
 
 footer{
@@ -48,4 +70,12 @@ footer{
     border-top: 2px dotted darkgray;
     text-align: center;
 }
-/* This is a comment use command / to use it */
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkgrey;
+    background-color: var(--background-color);
+    color: black;
+
+}
