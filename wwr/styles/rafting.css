@@ -1,0 +1,123 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(225, 169, 135);
+    --secondary-color: rgb(216, 209, 116);
+    --accent1-color: rgb(138, 161, 177);
+    --accent2-color: rgb(148, 119, 139);
+    --heading-color: rgb(154, 194, 201);
+    --body-color: black;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--body-color)
+}
+header a {
+    display: block;
+    padding: 5px;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--body-color)
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+nav, p, section, article, aside {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a{ 
+    text-decoration: none;
+    /* the .socialmedia a{} means that the class will only apply to the anchor tags within the parent tag */
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.95;
+    background-color: var(--accent1-color);
+   
+}
+
+article {
+    position: absolute;
+
+    top: 200px;
+    width: 90%;
+    height: auto;
+    padding: 1px;
+    text-align: left;
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    border: 1px solid black;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+    position: static;
+    margin-top: 90px;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: var(--heading-color);
+}
+
+section p {
+    color: var(--body-color);
+}
+
+aside {
+    background-color: var(--accent1-color);
+    opacity: 0.7;
+}
+
+footer {
+    border-top: 1px solid black;
+    margin: 20px;
+    text-align: center;
+}
+footer a {
+    padding: 5px;
+}

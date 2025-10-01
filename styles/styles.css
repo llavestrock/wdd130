@@ -29,6 +29,7 @@ main img{
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 2px;
 }
 p {
     padding: 5px;
@@ -54,6 +55,7 @@ aside{
     padding: var(--padding);
     background-color: var(--background-color);
     color: var(--color);
+    position: relative;
 }
 aside img{
     width: var(--width);
@@ -61,7 +63,7 @@ aside img{
 }
 aside h2{
     position: absolute;
-    top: 400px;
+    top: 50px;
     left: 300px;
 }
 
