@@ -26,7 +26,8 @@ header a {
 
 body {
     font-family: var(--body-font);
-    color: var(--body-color)
+    color: var(--body-color);
+    background-color: var(--accent2-color);
 }
 
 header, main, footer {
